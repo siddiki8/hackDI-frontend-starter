@@ -15,13 +15,9 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
   color: white;
+  margin-bottom: 2rem;
 }
 
 .App-link {
@@ -35,4 +31,130 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.note-form {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
+}
+
+.note-form h2 {
+  margin-top: 0;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.note-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.note-form input,
+.note-form textarea {
+  font-size: 1rem;
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.note-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.note-form button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: #61dafb;
+  color: #282c34;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.note-form button:hover {
+  background-color: #53a6c4;
+}
+
+.note-form button[type="button"] {
+  background-color: #f44336;
+  color: white;
+}
+
+.note-form button[type="button"]:hover {
+  background-color: #d32f2f;
+}
+
+.notes-list {
+  text-align: left;
+}
+
+.notes-list h2 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.notes-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.notes-list li {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: box-shadow 0.2s;
+}
+
+.notes-list li:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.notes-list h3 {
+  margin-top: 0;
+}
+
+.note-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.note-actions button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.note-actions button:hover {
+  background-color: #e0e0e0;
+}
+
+.note-actions button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+.note-actions button:last-child:hover {
+  background-color: #d32f2f;
 }

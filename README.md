@@ -1,6 +1,53 @@
-# Getting Started with Create React App
+# Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the frontend of the Hackathon Starter Project! This is where the user interface of your application lives.
+
+## What is a Frontend?
+
+A frontend is the part of a web application that users interact with directly. It's also known as the "client-side" of the application. It includes everything that users experience: colors and styles, buttons, images, and navigation menus.
+
+In this project, the frontend is a **React application**. React is a popular JavaScript library for building user interfaces.
+
+## Connecting to the Backend
+
+This frontend is designed to work with a backend server. The backend provides data and services that the frontend needs. They communicate using a **REST API**.
+
+Our backend is a Python application built with FastAPI. It exposes several endpoints (like `/notes`, `/notes/{note_id}`) for managing notes.
+
+The frontend uses the `axios` library to make HTTP requests to the backend. The application provides a simple interface to create, view, edit, and delete notes. The backend is configured to accept requests from this frontend.
+
+## Getting Started
+
+To get the frontend running locally, follow these steps:
+
+### Prerequisites
+
+-   [Node.js](https://nodejs.org/) (which includes npm) installed on your computer.
+-   The [backend server](../backend) from this project must be running.
+
+### Installation
+
+1.  **Navigate to the frontend directory:**
+
+    ```bash
+    cd frontend
+    ```
+
+2.  **Install the dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+### Running the Development Server
+
+1.  **Start the app:**
+
+    ```bash
+    npm start
+    ```
+
+This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser. The page will reload when you make changes.
 
 ## Available Scripts
 
@@ -9,15 +56,14 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
 
 ### `npm run build`
 
@@ -27,44 +73,8 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project. 
