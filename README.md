@@ -30,7 +30,7 @@ To get the frontend running locally, follow these steps:
 1.  **Navigate to the frontend directory:**
 
     ```bash
-    cd frontend
+    cd hackDI-frontend-starter
     ```
 
 2.  **Install the dependencies:**
