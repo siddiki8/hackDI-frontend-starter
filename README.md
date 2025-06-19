@@ -23,7 +23,7 @@ To get the frontend running locally, follow these steps:
 ### Prerequisites
 
 -   [Node.js](https://nodejs.org/) (which includes npm) installed on your computer.
--   The [backend server](../backend) from this project must be running.
+-   The [backend server](https://github.com/siddiki8/hackDI-backend-starter) from this project must be running.
 
 ### Installation
 
